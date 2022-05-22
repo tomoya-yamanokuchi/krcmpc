@@ -1,157 +1,165 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Randomized-to-Canonical Model Predictive Control for Real-world Visual Robotic Manipulation</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <!-- CSS only -->
-<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/cayman.css">
-    <!-- JavaScript Bundle with Popper -->
-<!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Randomized-to-Canonical Model Predictive Control<br>for Real-world Visual Robotic
-        Manipulation</h1>
-      <h2 class="project-tagline">Tomoya Yamanokuchi<sup>1</sup>, Yuhwan Kwon<sup>1</sup>, Yoshihisa Tsurumine<sup>1</sup>,
-        Eiji Uchibe<sup>2</sup>, Jun Morimoto<sup>3,2</sup>, and Takamitsu Matsubara<sup>1</sup></h2>
-      <h2 class="project-tagline">1: Nara Institute of Science and Technology (NAIST)<br>
-        2: Advanced Telecommunications Research Institute International (ATR)<br>
-        3: Kyoto University</h2>
-      <a href="#" class="btn">arXiv<br>(Coming soon)</a>
-<!--      <a href="#" class="btn">IEEE</a>-->
-      <a href="#" class="btn">Video<br>(Coming soon)</a>
-    </section>
+<html lang="en-us" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>Randomized-to-Canonical Model Predictive Control for Real-world Visual Robotic Manipulation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/cayman.css">
+  <link rel="stylesheet" href="css/y-kwon.css">
 
-    <section class="main-content">
-      <h1>
-      <a id="user-content-header-1" class="anchor" href="#header-1" aria-hidden="true"><span
-              class="octicon octicon-link"></span></a>Abstract</h1>
-
-      <p>Many works have recently explored Sim-to-real transferable visual model predictive control (MPC).
-         However, such works are limited to one-shot transfer, where real-world data must be collected once to
-         perform the sim-to-real transfer, which remains a significant human effort of transferring the models
-         learned in simulations to new domains in the real world.
-         To alleviate these problems, we first propose a novel model-learning framework called
-         <strong>Kalman Randomized-to-Canonical Model (KRC-model)</strong>. This framework is capable of extracting
-         task-relevant intrinsic features and their dynamics from randomized images. We then propose
-         <strong>Kalman Randomized-to-Canonical Model Predictive Control (KRC-MPC)</strong> as a zero-shot sim-to-real
-         transferable visual MPC using KRC-model. The effectiveness of our method is evaluated through valve rotation
-         tasks by a robot hand in both simulation and the real world, and the block mating tasks in simulation. The
-         experimental results show that KRC-MPC can be applied to various real domains and tasks in a zero-shot
-         manner. </p>
-
-      <h1>
-      <a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span
-              class="octicon octicon-link"></span></a>Simulation Experiments</h1>
-      <h2>
-      <a id="user-content-header-3" class="anchor" href="#header-3" aria-hidden="true"><span
-              class="octicon octicon-link"></span></a>Valve Rotation Task</h2>
-      <table>
-        <tr>
-          <td>　 　 　 <strong>KRC w/o z</strong></td>
-          <td>　　 　 　　　　<strong>KR2 w/o z</strong></td>
-          <td>　　 　 　 　　<strong>Random Policy</strong></td>
-        </tr>
-      </table>
-      <iframe src="videos/sim_valve/KRC_without_z/krc_wo_z.gif" width="250" height="255"
-        allow="autoplay", scrolling="no"></iframe>
-      <iframe src="videos/sim_valve/KR2_without_z/kr2_wo_z.gif" width="250" height="255"
-        allow="autoplay", scrolling="no"></iframe>
-      <iframe src="videos/sim_valve/Random_Policy/random.gif" width="250" height="255"
-        allow="autoplay", scrolling="no"></iframe>
-
-      <h2>
-      <a id="user-content-header-4" class="anchor" href="#header-4" aria-hidden="true"><span
-              class="octicon octicon-link"></span></a>Block Mating Task</h2>
-      <table>
-        <tr>
-          <td>　 　 　 <strong>KRC w/o z</strong></td>
-          <td>　　 　 　　　　<strong>KR2 w/o z</strong></td>
-          <td>　　 　 　 　　<strong>Random Policy</strong></td>
-        </tr>
-      </table>
-      <iframe src="videos/sim_block/KRC_without_z/krc_wo_z.gif" width="250" height="255"
-        allow="autoplay", scrolling="no"></iframe>
-      <iframe src="videos/sim_block/KR2_without_z/kr2_wo_z.gif" width="250" height="255"
-        allow="autoplay", scrolling="no"></iframe>
-      <iframe src="videos/sim_block/Random_Policy/random.gif" width="250" height="255"
-        allow="autoplay", scrolling="no"></iframe>
+</head>
+<body>
+<section class="page-header">
+  <h1 class="project-name">Randomized-to-Canonical Model Predictive Control<br>for Real-world Visual Robotic
+    Manipulation</h1>
+  <h2 class="project-tagline">Tomoya Yamanokuchi<sup>1</sup>, Yuhwan Kwon<sup>1</sup>, Yoshihisa Tsurumine<sup>1</sup>,
+    <br>Eiji Uchibe<sup>2</sup>, Jun Morimoto<sup>3,2</sup>, and Takamitsu Matsubara<sup>1</sup></h2>
+  <h2 class="project-tagline">1: Nara Institute of Science and Technology (NAIST)<br>
+    2: Advanced Telecommunications Research Institute International (ATR)<br>
+    3: Kyoto University</h2>
+  <a href="#" class="btn">arXiv<br>(Coming soon)</a>
+  <!--      <a href="#" class="btn">IEEE</a>-->
+  <a href="#" class="btn">Video<br>(Coming soon)</a>
+</section>
 
 
-      <h1>
-      <a id="user-content-header-5" class="anchor" href="#header-5" aria-hidden="true"><span
-              class="octicon octicon-link"></span></a>Real Experiments (Valve Rotation Task)</h1>
-      <h2>
-      <a id="user-content-header-6" class="anchor" href="#header-6" aria-hidden="true"><span
-              class="octicon octicon-link"></span></a>Test Domains</h2>
+<section class="main-content">
+  <h1>
+    <a id="user-content-header-1" class="anchor" href="#header-1" aria-hidden="true"><span
+            class="octicon octicon-link"></span></a>Abstract</h1>
 
-      <iframe src="videos/real_valve/test_domains/0.gif" width="250" height="205"
-        allow="autoplay", scrolling="no"></iframe>
-      <iframe src="videos/real_valve/test_domains/1.gif" width="250" height="205"
-        allow="autoplay", scrolling="no"></iframe>
-      <iframe src="videos/real_valve/test_domains/2.gif" width="250" height="205"
-        allow="autoplay", scrolling="no"></iframe>
-      <iframe src="videos/real_valve/test_domains/3.gif" width="250" height="205"
-        allow="autoplay", scrolling="no"></iframe>
-      <iframe src="videos/real_valve/test_domains/4.gif" width="250" height="205"
-        allow="autoplay", scrolling="no"></iframe>
-      <iframe src="videos/real_valve/test_domains/5.gif" width="250" height="205"
-        allow="autoplay", scrolling="no"></iframe>
+  <p>Many works have recently explored Sim-to-real transferable visual model predictive control (MPC).
+    However, such works are limited to one-shot transfer, where real-world data must be collected once to
+    perform the sim-to-real transfer, which remains a significant human effort of transferring the models
+    learned in simulations to new domains in the real world.
+    To alleviate these problems, we first propose a novel model-learning framework called
+    <strong>Kalman Randomized-to-Canonical Model (KRC-model)</strong>. This framework is capable of extracting
+    task-relevant intrinsic features and their dynamics from randomized images. We then propose
+    <strong>Kalman Randomized-to-Canonical Model Predictive Control (KRC-MPC)</strong> as a zero-shot sim-to-real
+    transferable visual MPC using KRC-model. The effectiveness of our method is evaluated through valve rotation
+    tasks by a robot hand in both simulation and the real world, and the block mating tasks in simulation. The
+    experimental results show that KRC-MPC can be applied to various real domains and tasks in a zero-shot
+    manner. </p>
+
+  <h1>
+    <a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span
+            class="octicon octicon-link"></span></a>Simulation Experiments</h1>
+  <h2>
+    <a id="user-content-header-3" class="anchor" href="#header-3" aria-hidden="true"><span
+            class="octicon octicon-link"></span></a>Valve Rotation Task</h2>
+  <div class="yoko">
+    <figure>
+      <figcaption>KRC w/o z (Ours)</figcaption>
+      <img src="videos/sim_valve/KRC_without_z/krc_wo_z.gif" alt="">
+    </figure>
+    <figure>
+      <figcaption>KR2 w/o z</figcaption>
+      <img src="videos/sim_valve/KR2_without_z/kr2_wo_z.gif" alt="">
+    </figure>
+    <figure>
+      <figcaption>Random Policy</figcaption>
+      <img src="videos/sim_valve/Random_Policy/random.gif" alt="">
+    </figure>
+  </div>
+
+  <h2>
+    <a id="user-content-header-4" class="anchor" href="#header-4" aria-hidden="true"><span
+            class="octicon octicon-link"></span></a>Block Mating Task</h2>
+
+  <div class="yoko">
+    <figure>
+      <figcaption>KRC w/o z (Ours)</figcaption>
+      <img src="videos/sim_block/KRC_without_z/krc_wo_z.gif" alt="">
+    </figure>
+    <figure>
+      <figcaption>KR2 w/o z</figcaption>
+      <img src="videos/sim_block/KR2_without_z/kr2_wo_z.gif" alt="">
+    </figure>
+    <figure>
+      <figcaption>Random Policy</figcaption>
+      <img src="videos/sim_block/Random_Policy/random.gif" alt="">
+    </figure>
+  </div>
+
+  <h1>
+    <a id="user-content-header-5" class="anchor" href="#header-5" aria-hidden="true"><span
+            class="octicon octicon-link"></span></a>Real Experiments (Valve Rotation Task)</h1>
+  <h2>
+    <a id="user-content-header-6" class="anchor" href="#header-6" aria-hidden="true"><span
+            class="octicon octicon-link"></span></a>Test Domains</h2>
+
+  <div class="yoko2">
+    <img src="videos/real_valve/test_domains/0.gif"
+         alt="">
+    <img src="videos/real_valve/test_domains/1.gif"
+         alt="">
+    <img src="videos/real_valve/test_domains/2.gif"
+         alt="">
+  </div>
+  <div class="yoko2">
+    <img src="videos/real_valve/test_domains/3.gif"
+         alt="">
+    <img src="videos/real_valve/test_domains/4.gif"
+         alt="">
+    <img src="videos/real_valve/test_domains/5.gif"
+         alt="">
+  </div>
+
+  <h2>
+    <a id="user-content-header-7" class="anchor" href="#header-7" aria-hidden="true"><span
+            class="octicon octicon-link"></span></a>Comparison (Domain 2)</h2>
+
+  <div class="yoko">
+    <figure>
+      <figcaption>KRC w/o z (Ours)</figcaption>
+      <img src="videos/real_valve/KRC_without_z/1.gif" alt="">
+    </figure>
+    <figure>
+      <figcaption>KR2 w/o z</figcaption>
+      <img src="videos/real_valve/KR2_without_z/1.gif" alt="">
+    </figure>
+    <figure>
+      <figcaption>Random Policy</figcaption>
+      <img src="videos/real_valve/Random_Policy/1.gif" alt="">
+    </figure>
+  </div>
 
 
-      <h2>
-      <a id="user-content-header-7" class="anchor" href="#header-7" aria-hidden="true"><span
-              class="octicon octicon-link"></span></a>Comparison (Domain 4)</h2>
-
-      <table>
-        <tr>
-          <td>　 　 　 <strong>KRC w/o z</strong></td>
-          <td>　　 　 　　　　<strong>KR2 w/o z</strong></td>
-          <td>　　 　 　 　　<strong>Random Policy</strong></td>
-        </tr>
-      </table>
-      <iframe src="videos/real_valve/KRC_without_z/0.gif" width="250" height="205"
-        allow="autoplay", scrolling="no"></iframe>
-      <iframe src="videos/real_valve/KR2_without_z/0.gif" width="250" height="205"
-        allow="autoplay", scrolling="no"></iframe>
-      <iframe src="videos/real_valve/Random_Policy/0.gif" width="250" height="205"
-        allow="autoplay", scrolling="no"></iframe>
+  <h2>
+    <a id="user-content-header-8" class="anchor" href="#header-8" aria-hidden="true"><span
+            class="octicon octicon-link"></span></a>Comparison (Domain 4)</h2>
 
 
-      <h2>
-      <a id="user-content-header-8" class="anchor" href="#header-8" aria-hidden="true"><span
-              class="octicon octicon-link"></span></a>Comparison (Domain 2)</h2>
-      <table>
-        <tr>
-          <td>　 　 　 <strong>KRC w/o z</strong></td>
-          <td>　　 　 　　　　<strong>KR2 w/o z</strong></td>
-          <td>　　 　 　 　　<strong>Random Policy</strong></td>
-        </tr>
-      </table>
-      <iframe src="videos/real_valve/KRC_without_z/1.gif" width="250" height="205"
-        allow="autoplay", scrolling="no"></iframe>
-      <iframe src="videos/real_valve/KR2_without_z/1.gif" width="250" height="205"
-        allow="autoplay", scrolling="no"></iframe>
-      <iframe src="videos/real_valve/Random_Policy/1.gif" width="250" height="205"
-        allow="autoplay", scrolling="no"></iframe>
-      <h1>
-      <a id="user-content-header-9" class="anchor" href="#header-9" aria-hidden="true"><span
-              class="octicon octicon-link"></span></a>Parameters</h1>
+  <div class="yoko">
+    <figure>
+      <figcaption>KRC w/o z (Ours)</figcaption>
+      <img src="videos/real_valve/KRC_without_z/0.gif" alt="">
+    </figure>
+    <figure>
+      <figcaption>KR2 w/o z</figcaption>
+      <img src="videos/real_valve/KR2_without_z/0.gif" alt="">
+    </figure>
+    <figure>
+      <figcaption>Random Policy</figcaption>
+      <img src="videos/real_valve/Random_Policy/0.gif" alt="">
+    </figure>
+  </div>
+  <h1>
+    <a id="user-content-header-9" class="anchor" href="#header-9" aria-hidden="true"><span
+            class="octicon octicon-link"></span></a>Parameters</h1>
+  <iframe src="https://drive.google.com/file/d/104g17N4dP27qN_mymdlqqqs5qNX5VZAH/preview" width="100%"
+          height="375"
+          allow="autoplay"></iframe>
+  <footer class="site-footer">
+    <!--        <span class="site-footer-owner"><a href="https://github.com/jasonlong/cayman-theme">Cayman</a> is maintained by <a href="https://github.com/jasonlong">jasonlong</a>.</span>-->
+    <span class="site-footer-credits">This page was generated by <a
+            href="https://pages.github.com">GitHub Pages</a>.</span>
+  </footer>
 
-      <iframe src="https://drive.google.com/file/d/104g17N4dP27qN_mymdlqqqs5qNX5VZAH/preview" width="750" height="1000"
-        allow="autoplay"></iframe>
+</section>
 
-      <footer class="site-footer">
-<!--        <span class="site-footer-owner"><a href="https://github.com/jasonlong/cayman-theme">Cayman</a> is maintained by <a href="https://github.com/jasonlong">jasonlong</a>.</span>-->
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
-      </footer>
-
-    </section>
-
-  </body>
+</body>
 </html>
