@@ -1,0 +1,38 @@
+
+.colfig {
+  display       : flex;
+  max-height     : 950px;
+  margin-top    : 1vw;
+  margin-bottom : 2vw;
+  margin-left   : auto;
+  margin-right  : auto;
+  text-align    : center;
+  font-weight   : bold;
+  align-items: bottom;
+}
+
+
+
+#wrapper {
+  display       : flex;
+	height: 400px;
+	margin: 0 auto;  /*ブラウザの中央に配置*/
+}
+.line_container {
+  height    : 750px;  /*boxが横に並ぶだけの幅を確保*/
+  overflow  : hidden;  /*wrapperからはみ出る部分を非表示にする*/
+  text-align: center;
+  margin-top   : auto;
+  margin-bottom  : auto;
+}
+
+
+
+
+.box {
+	width: 400px;/*内容領域の幅。下の左右のpaddingを合わせてボックスが200pxになります。*/
+	padding: 10px;/*上下左右に10pxの内余白*/
+	float: left;/*横並びにしています*/
+	margin-right: 20px;/*各ボックスの右側に20pxの外余白*/
+	background: #fff;
+}
