@@ -376,80 +376,76 @@ a {
   }
 }
 
+
+/* ------------------------------------------------------ */
 @media screen and (max-width: 1024px) {
-  h2 {
-    font-size: 2.5vw;
+  h3 {
+    font-size: 2.0vw;
   }
 }
 
 
-.yoko {
-  display: flex;
-  max-width: 950px;
-  margin-top: 1vw;
-  margin-bottom: 2vw;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  font-weight: bold;
-}
-
 @media screen and (min-width: 1520px) {
-  .yoko {
-    font-size: 1.5rem;
+  h3 {
+    font-size: 1.3rem;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1520px) {
-  .yoko {
-    font-size: 1.8vw;
+  h3 {
+    font-size: 1.7vw;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .yoko {
-    font-size: 2vw;
+  h3 {
+    font-size: 2.0vw;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .yoko figure {
-    margin: 0 auto;
-    width: 300px;
-  }
+
+
+
+
+
+
+/* ------------------- tomoya-y ----------------------- */
+.overview_img {
+  width : 60%;    /* 横幅を割合で指定 */
+  height: auto;  /* 高さは自動指定 */
 }
 
-@media screen and (max-width: 1200px) {
-  .yoko figure {
-    margin: 0 auto;
-    width: 30%;
-  }
+.RCAN_img {
+  width: 60%;    /* 横幅を割合で指定 */
+  height: auto;  /* 高さは自動指定 */
 }
 
-.yoko2 {
+.task_ablation_img {
+  width: 80%;    /* 横幅を割合で指定 */
+  height: auto;  /* 高さは自動指定 */
+}
+
+.center_man{
+  text-align : center;
+}
+
+.cost_function_img {
+  width: 60%;    /* 横幅を割合で指定 */
+  height: auto;  /* 高さは自動指定 */
+}
+
+
+ul{
   display: flex;
-  max-width: 950px;
-  margin-top: 1vw;
-  margin-bottom: 2vw;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  font-weight: bold;
+  justify-content: center;
 }
 
-@media screen and (min-width: 1200px) {
-  .yoko2 img {
-    margin: 0 auto;
-    width: 300px;
-  }
+
+.flexbox{
+  display: flex;
+  flex-direction: column;
 }
 
-@media screen and (max-width: 1200px) {
-  .yoko2 img {
-    margin: 0 auto;
-    width: 30%;
-  }
-}
 
 /*.for_iframe{*/
 /*  width: 75vw;*/
