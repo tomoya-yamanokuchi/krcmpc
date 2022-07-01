@@ -1,6 +1,7 @@
 .sim_yoko {
   display      : flex;
   max-width    : 950px;
+  align-items   : flex-end;
   margin-top   : 1vw;
   margin-bottom: 2vw;
   margin-left  : auto;
