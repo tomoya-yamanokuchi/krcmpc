@@ -3,20 +3,18 @@
   max-width: 300px;
   margin-top: 1vw;
   margin-bottom: 2vw;
-  /* margin-top   : auto;
-  margin-bottom  : auto; */
   text-align    : center;
   font-weight   : bold;
   /* object-fit:  contain; */
   display: inline-block;
+  /* vertical-align: middle; */
 }
-/*
+
 @media screen and (min-height: 1520px) {
   .tate {
     font-size: 1.5rem;
   }
 }
-
 
 @media screen and (min-height: 1024px) and (max-height: 1520px) {
   .tate {
@@ -28,7 +26,7 @@
   .tate {
     font-size: 2vw;
   }
-} */
+}
 
 @media screen and (min-height: 1200px) {
   .tate figure {
@@ -42,6 +40,8 @@
   .tate figure {
     margin: 0 auto;
     height: 30%;
+    width: 30%;
     vertical-align: middle;
   }
 }
+
