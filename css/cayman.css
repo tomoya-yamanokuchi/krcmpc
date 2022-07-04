@@ -421,7 +421,7 @@ a {
 }
 
 .task_ablation_img {
-  width: 80%;    /* 横幅を割合で指定 */
+  width: 80vw;    /* 横幅を割合で指定 */
   height: auto;  /* 高さは自動指定 */
 }
 
