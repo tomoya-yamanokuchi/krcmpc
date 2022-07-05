@@ -1,0 +1,42 @@
+.yoko {
+  display      : flex;
+  max-width    : 950px;
+  margin-top   : 1vw;
+  margin-bottom: 2vw;
+  margin-left  : auto;
+  margin-right : auto;
+  text-align   : center;
+  font-weight  : bold;
+}
+
+@media screen and (min-width: 1520px) {
+.yoko {
+    font-size: 1.5rem;
+}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1520px) {
+.yoko {
+    font-size: 1.8vw;
+}
+}
+
+@media screen and (max-width: 1024px) {
+.yoko {
+    font-size: 2vw;
+}
+}
+
+@media screen and (min-width: 1200px) {
+.yoko figure {
+    margin: 0 auto;
+    width: 300px;
+}
+}
+
+@media screen and (max-width: 1200px) {
+.yoko figure {
+    margin: 0 auto;
+    width: 30%;
+}
+}
