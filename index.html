@@ -2,7 +2,7 @@
 <html lang="en-us" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="UTF-8">
-  <title>Randomized-to-Canonical Model Predictive Control for Real-world Visual Robotic Manipulation</title>
+  <title>KRC-MPC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#157878">
   <link rel="stylesheet" href="css/normalize.css">
@@ -13,7 +13,6 @@
   <link rel="stylesheet" href="css/real_yoko2.css">
   <link rel="stylesheet" href="css/tate.css">
   <link rel="stylesheet" href="css/figures.css">
-  <link rel="stylesheet" href="css/y-kwon.css">
 
 </head>
 <body>
@@ -22,11 +21,12 @@
     Manipulation</h1>
   <h2 class="project-tagline">Tomoya Yamanokuchi<sup>1</sup>, Yuhwan Kwon<sup>1</sup>, Yoshihisa Tsurumine<sup>1</sup>,
     <br>Eiji Uchibe<sup>2</sup>, Jun Morimoto<sup>3,2</sup>, and Takamitsu Matsubara<sup>1</sup></h2>
-  <h2 class="project-tagline">1: Nara Institute of Science and Technology (NAIST)<br>
+  <h3 class="project-tagline">1: Nara Institute of Science and Technology (NAIST)<br>
     2: Advanced Telecommunications Research Institute International (ATR)<br>
-    3: Kyoto University</h2>
+    3: Kyoto University</h3>
+  <h4 class="project-tagline">Accepted by IEEE RA-L (with IROS 2022 option)</h4>
   <a href="#" class="btn">arXiv<br>(Coming soon)</a>
-  <!--      <a href="#" class="btn">IEEE</a>-->
+  <a href="#" class="btn">IEEE Xplore<br>(Coming soon)</a>
   <a href="#" class="btn">Video<br>(Coming soon)</a>
 </section>
 
@@ -59,7 +59,7 @@
 
   <div class="center_man">
     <figure>
-      <img src="figure/overview_of_mehod.png" alt="cat" class="overview_img">
+      <img src="figure/overview_of_mehod.png" alt="Overview" class="overview_img">
     </figure>
   </div>
 
@@ -72,7 +72,7 @@
 
   <div class="center_man">
     <figure>
-      <img src="figure/RCAN_network_architecture.png" alt="cat" class="RCAN_img">
+      <img src="figure/RCAN_network_architecture.png" alt="net arch." class="RCAN_img">
     </figure>
   </div>
 
@@ -92,7 +92,7 @@
 
       <div class="sim_yoko">
         <figure>
-          <figcaption>KRC w/ z</figcaption>
+          <figcaption><h5>KRC w/ z</h5></figcaption>
           <figure>
             <div class="tate">
               <img src="figure/valve_rotation/success/KRC_w_z_success/KRC_w_z_success_domain20.gif" alt="" style="vertical-align: middle;">
@@ -102,7 +102,7 @@
         </figure>
         </figure>
         <figure>
-          <figcaption>KRC w/o z</figcaption>
+          <figcaption><h5>KRC w/o z</h5></figcaption>
           <figure>
             <div class="tate">
               <img src="figure/valve_rotation/success/KRC_wo_z_success/KRC_wo_z_success_domain5.gif" alt="" style="vertical-align: middle;">
@@ -112,7 +112,7 @@
         </figure>
         </figure>
         <figure>
-          <figcaption>KR2 w/ z </figcaption>
+          <figcaption><h5>KR2 w/ z </h5></figcaption>
           <figure>
             <div class="tate">
               <img src="figure/valve_rotation/success/KR2_w_z_success/KR2_w_z_success_domain29.gif"  alt="" style="vertical-align: middle;">
@@ -122,7 +122,7 @@
           </figure>
         </figure>
         <figure>
-          <figcaption>KR2 w/o z </figcaption>
+          <figcaption><h5>KR2 w/o z </h5></figcaption>
           <figure>
             <div class="tate">
               <img src="figure/valve_rotation/success/KR2_wo_z_success/KR2_wo_z_success_domain29.gif"   alt="" style="vertical-align: middle;">
@@ -132,7 +132,7 @@
           </figure>
         </figure>
         <figure>
-          <figcaption>KC2 w/ z</figcaption>
+          <figcaption><h5>KC2 w/ z</h5></figcaption>
           <figure>
             <div class="tate">
               <img src="figure/valve_rotation/success/KC2_w_z_success/KC2_w_z_success_domain94.gif" alt="" style="vertical-align: middle;">
@@ -142,7 +142,7 @@
           </figure>
         </figure>
         <figure>
-          <figcaption>Random Policy</figcaption>
+          <figcaption><h5>Random Policy</h5></figcaption>
           <figure>
             <div class="tate">
               <img src="figure/No_Success.png" alt="" style="vertical-align: middle;">
@@ -162,7 +162,7 @@
 
     <div class="sim_yoko">
       <figure>
-        <figcaption>KRC w/ z</figcaption>
+        <figcaption><h5>KRC w/ z</h5></figcaption>
         <figure>
           <div class="tate">
             <img src="figure/valve_rotation/failure/KRC_w_z_failure/KR2_w_z_failure_domain37.gif" alt="" style="vertical-align: middle;">
@@ -172,7 +172,7 @@
       </figure>
       </figure>
       <figure>
-        <figcaption>KRC w/o z</figcaption>
+        <figcaption><h5>KRC w/o z</h5></figcaption>
         <figure>
           <div class="tate">
             <img src="figure/No_Failure.png" alt="" style="vertical-align: middle;">
@@ -182,7 +182,7 @@
       </figure>
       </figure>
       <figure>
-        <figcaption>KR2 w/ z </figcaption>
+        <figcaption><h5>KR2 w/ z </h5></figcaption>
         <figure>
           <div class="tate">
             <img src="figure/valve_rotation/failure/KR2_w_z_failure/KR2_w_z_failure_domain85.gif"  alt="" style="vertical-align: middle;">
@@ -192,7 +192,7 @@
         </figure>
       </figure>
       <figure>
-        <figcaption>KR2 w/o z </figcaption>
+        <figcaption><h5>KR2 w/o z </h5></figcaption>
         <figure>
           <div class="tate">
             <img src="figure/valve_rotation/failure/KR2_wo_z_failure/KR2_wo_z_failure_domain7.gif"   alt="" style="vertical-align: middle;">
@@ -202,7 +202,7 @@
         </figure>
       </figure>
       <figure>
-        <figcaption>KC2 w/ z</figcaption>
+        <figcaption><h5>KC2 w/ z</h5></figcaption>
         <figure>
           <div class="tate">
             <img src="figure/valve_rotation/failure/KC2_w_z_failure/KR2_wo_z_failure_domain22.gif" alt="" style="vertical-align: middle;">
@@ -212,7 +212,7 @@
         </figure>
       </figure>
       <figure>
-        <figcaption>Random Policy</figcaption>
+        <figcaption><h5>Random Policy</h5></figcaption>
         <figure>
           <div class="tate">
             <img src="figure/valve_rotation/failure/Random_Policy_failure/KR2_wo_z_failure_domain10.gif" alt="" style="vertical-align: middle;">
@@ -231,15 +231,15 @@
 
   <!-- <div class="yoko">
     <figure>
-      <figcaption>KRC w/o z (Ours)</figcaption>
+      <figcaption><h5>KRC w/o z (Ours)</h5></figcaption>
       <img src="videos/sim_block/KRC_without_z/krc_wo_z.gif" alt="">
     </figure>
     <figure>
-      <figcaption>KR2 w/o z</figcaption>
+      <figcaption><h5>KR2 w/o z</h5></figcaption>
       <img src="videos/sim_block/KR2_without_z/kr2_wo_z.gif" alt="">
     </figure>
     <figure>
-      <figcaption>Random Policy</figcaption>
+      <figcaption><h5>Random Policy</h5></figcaption>
       <img src="videos/sim_block/Random_Policy/random.gif" alt="">
     </figure>
   </div> -->
@@ -250,7 +250,7 @@
 
   <div class="sim_yoko">
     <figure>
-      <figcaption>KRC w/ z</figcaption>
+      <figcaption><h5>KRC w/ z</h5></figcaption>
       <figure>
         <div class="tate">
           <img src="figure/block_mating/lower_cost_top3/KRC_w_z_lower/KRC_w_z_lower1.gif" alt="" style="vertical-align: middle;">
@@ -260,7 +260,7 @@
     </figure>
     </figure>
     <figure>
-      <figcaption>KRC w/o z</figcaption>
+      <figcaption><h5>KRC w/o z</h5></figcaption>
       <figure>
         <div class="tate">
           <img src="figure/block_mating/lower_cost_top3/KRC_wo_z_lower/KRC_wo_z_lower1.gif" alt="" style="vertical-align: middle;">
@@ -270,7 +270,7 @@
     </figure>
     </figure>
     <figure>
-      <figcaption>KR2 w/ z </figcaption>
+      <figcaption><h5>KR2 w/ z </h5></figcaption>
       <figure>
         <div class="tate">
           <img src="figure/block_mating/lower_cost_top3/KR2_w_z_lower/KR2_w_z_lower1.gif" alt="" style="vertical-align: middle;">
@@ -280,7 +280,7 @@
       </figure>
     </figure>
     <figure>
-      <figcaption>KR2 w/o z </figcaption>
+      <figcaption><h5>KR2 w/o z </h5></figcaption>
       <figure>
         <div class="tate">
           <img src="figure/block_mating/lower_cost_top3/KR2_wo_z_lower/KR2_wo_z_lower1.gif" alt="" style="vertical-align: middle;">
@@ -290,7 +290,7 @@
       </figure>
     </figure>
     <figure>
-      <figcaption>KC2 w/ z</figcaption>
+      <figcaption><h5>KC2 w/ z</h5></figcaption>
       <figure>
         <div class="tate">
           <img src="figure/block_mating/lower_cost_top3/KC2_w_z_lower/KC2_w_z_lower1.gif" alt="" style="vertical-align: middle;">
@@ -300,7 +300,7 @@
       </figure>
     </figure>
     <figure>
-      <figcaption>Random Policy</figcaption>
+      <figcaption><h5>Random Policy</h5></figcaption>
       <figure>
         <div class="tate">
           <img src="figure/block_mating/lower_cost_top3/Random_Policy/Random_Policy_lower1.gif" alt="" style="vertical-align: middle;">
@@ -319,7 +319,7 @@
 
   <div class="sim_yoko">
     <figure>
-      <figcaption>KRC w/ z</figcaption>
+      <figcaption><h5>KRC w/ z</h5></figcaption>
       <figure>
         <div class="tate">
           <img src="figure/block_mating/upper_cost_top3/KRC_w_z_upper/KRC_w_z_upper1.gif" alt="" style="vertical-align: middle;">
@@ -329,7 +329,7 @@
     </figure>
     </figure>
     <figure>
-      <figcaption>KRC w/o z</figcaption>
+      <figcaption><h5>KRC w/o z</h5></figcaption>
       <figure>
         <div class="tate">
           <img src="figure/block_mating/upper_cost_top3/KRC_wo_z_upper/KRC_wo_z_upper1.gif" alt="" style="vertical-align: middle;">
@@ -339,7 +339,7 @@
     </figure>
     </figure>
     <figure>
-      <figcaption>KR2 w/ z </figcaption>
+      <figcaption><h5>KR2 w/ z </h5></figcaption>
       <figure>
         <div class="tate">
           <img src="figure/block_mating/upper_cost_top3/KR2_w_z_upper/KR2_w_z_upper1.gif" alt="" style="vertical-align: middle;">
@@ -349,7 +349,7 @@
       </figure>
     </figure>
     <figure>
-      <figcaption>KR2 w/o z </figcaption>
+      <figcaption><h5>KR2 w/o z </h5></figcaption>
       <figure>
         <div class="tate">
           <img src="figure/block_mating/upper_cost_top3/KR2_wo_z_upper/KR2_wo_z_upper1.gif" alt="" style="vertical-align: middle;">
@@ -359,7 +359,7 @@
       </figure>
     </figure>
     <figure>
-      <figcaption>KC2 w/ z</figcaption>
+      <figcaption><h5>KC2 w/ z</h5></figcaption>
       <figure>
         <div class="tate">
           <img src="figure/block_mating/upper_cost_top3/KC2_w_z_upper/KC2_w_z_upper1.gif" alt="" style="vertical-align: middle;">
@@ -369,7 +369,7 @@
       </figure>
     </figure>
     <figure>
-      <figcaption>Random Policy</figcaption>
+      <figcaption><h5>Random Policy</h5></figcaption>
       <figure>
         <div class="tate">
           <img src="figure/block_mating/upper_cost_top3/Random_Policy/Random_Policy_upper1.gif" alt="" style="vertical-align: middle;">
@@ -420,67 +420,67 @@
   <h2>
     <a id="user-content-header-7" class="anchor" href="#header-7" aria-hidden="true"><spanclass="octicon octicon-link"></span></a>--Domain1--</h2>
   <div class="sim_yoko">
-    <figure><figcaption>KRC w/ z     </figcaption><img src="videos/real_valve/observation/Success/Domain1/KRC_w_z_Domain1_out_images_vis_Trial[0]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KRC w/o z    </figcaption><img src="videos/real_valve/observation/Success/Domain1/KRC_wo_z_Domain1_out_images_vis_Trial[0]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KR2 w/ z     </figcaption><img src="videos/real_valve/observation/Success/Domain1/KR2_w_z_Domain1_out_images_vis_Trial[0]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KR2 w/o z    </figcaption><img src="videos/real_valve/observation/Success/Domain1/KR2_wo_z_Domain1_out_images_vis_Trial[0]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KC2 w/ z     </figcaption><img src="figure/No_Success.png" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>Random Policy</figcaption><img src="figure/No_Success.png" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KRC w/ z     </h5></figcaption><img src="videos/real_valve/observation/Success/Domain1/KRC_w_z_Domain1_out_images_vis_Trial[0]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KRC w/o z    </h5></figcaption><img src="videos/real_valve/observation/Success/Domain1/KRC_wo_z_Domain1_out_images_vis_Trial[0]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KR2 w/ z     </h5></figcaption><img src="videos/real_valve/observation/Success/Domain1/KR2_w_z_Domain1_out_images_vis_Trial[0]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KR2 w/o z    </h5></figcaption><img src="videos/real_valve/observation/Success/Domain1/KR2_wo_z_Domain1_out_images_vis_Trial[0]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KC2 w/ z     </h5></figcaption><img src="figure/No_Success.png" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>Random Policy</h5></figcaption><img src="figure/No_Success.png" alt="" style="vertical-align: middle;"></figure>
   </div>
 
   <h2>
     <a id="user-content-header-7" class="anchor" href="#header-7" aria-hidden="true"><span class="octicon octicon-link"></span></a>--Domain2--</h2>
   <div class="sim_yoko">
-    <figure><figcaption>KRC w/ z     </figcaption><img src="videos/real_valve/observation/Success/Domain2/KRC_w_z_Domain2_out_images_vis_Trial[0]_Result[sucess].gif"  alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KRC w/o z    </figcaption><img src="videos/real_valve/observation/Success/Domain2/KRC_wo_z_Domain2_out_images_vis_Trial[0]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KR2 w/ z     </figcaption><img src="videos/real_valve/observation/Success/Domain2/KR2_w_z_Domain2_out_images_vis_Trial[0]_Result[sucess].gif"  alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KR2 w/o z    </figcaption><img src="videos/real_valve/observation/Success/Domain2/KR2_wo_z_Domain2_out_images_vis_Trial[0]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KC2 w/ z     </figcaption><img src="figure/No_Success.png" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>Random Policy</figcaption><img src="figure/No_Success.png" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KRC w/ z     </h5></figcaption><img src="videos/real_valve/observation/Success/Domain2/KRC_w_z_Domain2_out_images_vis_Trial[0]_Result[sucess].gif"  alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KRC w/o z    </h5></figcaption><img src="videos/real_valve/observation/Success/Domain2/KRC_wo_z_Domain2_out_images_vis_Trial[0]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KR2 w/ z     </h5></figcaption><img src="videos/real_valve/observation/Success/Domain2/KR2_w_z_Domain2_out_images_vis_Trial[0]_Result[sucess].gif"  alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KR2 w/o z    </h5></figcaption><img src="videos/real_valve/observation/Success/Domain2/KR2_wo_z_Domain2_out_images_vis_Trial[0]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KC2 w/ z     </h5></figcaption><img src="figure/No_Success.png" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>Random Policy</h5></figcaption><img src="figure/No_Success.png" alt="" style="vertical-align: middle;"></figure>
   </div>
 
   <h2>
     <a id="user-content-header-7" class="anchor" href="#header-7" aria-hidden="true"><span class="octicon octicon-link"></span></a>--Domain3--</h2>
   <div class="sim_yoko">
-    <figure><figcaption>KRC w/ z     </figcaption><img src="videos/real_valve/observation/Success/Domain3/KRC_w_z_Domain3_out_images_vis_Trial[0]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KRC w/o z    </figcaption><img src="videos/real_valve/observation/Success/Domain3/KRC_wo_z_Domain3_out_images_vis_Trial[1]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KR2 w/ z     </figcaption><img src="videos/real_valve/observation/Success/Domain3/KR2_w_z_Domain3_out_images_vis_Trial[1]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KR2 w/o z    </figcaption><img src="videos/real_valve/observation/Success/Domain3/KR2_wo_z_Domain3_out_images_vis_Trial[1]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KC2 w/ z     </figcaption><img src="figure/No_Success.png" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>Random Policy</figcaption><img src="figure/No_Success.png" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KRC w/ z     </h5></figcaption><img src="videos/real_valve/observation/Success/Domain3/KRC_w_z_Domain3_out_images_vis_Trial[0]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KRC w/o z    </h5></figcaption><img src="videos/real_valve/observation/Success/Domain3/KRC_wo_z_Domain3_out_images_vis_Trial[1]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KR2 w/ z     </h5></figcaption><img src="videos/real_valve/observation/Success/Domain3/KR2_w_z_Domain3_out_images_vis_Trial[1]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KR2 w/o z    </h5></figcaption><img src="videos/real_valve/observation/Success/Domain3/KR2_wo_z_Domain3_out_images_vis_Trial[1]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KC2 w/ z     </h5></figcaption><img src="figure/No_Success.png" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>Random Policy</h5></figcaption><img src="figure/No_Success.png" alt="" style="vertical-align: middle;"></figure>
   </div>
 
   <h2>
     <a id="user-content-header-7" class="anchor" href="#header-7" aria-hidden="true"><span class="octicon octicon-link"></span></a>--Domain4--</h2>
   <div class="sim_yoko">
-    <figure><figcaption>KRC w/ z     </figcaption><img src="videos/real_valve/observation/Success/Domain4/KRC_w_z_out_images_vis.gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KRC w/o z    </figcaption><img src="videos/real_valve/observation/Success/Domain4/KRC_wo_z_out_images_vis.gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KR2 w/ z     </figcaption><img src="videos/real_valve/observation/Success/Domain4/KR2_w_z_out_images_vis.gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KR2 w/o z    </figcaption><img src="videos/real_valve/observation/Success/Domain4/KR2_wo_z_out_images_vis_success.gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KC2 w/ z     </figcaption><img src="figure/No_Success.png" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>Random Policy</figcaption><img src="figure/No_Success.png" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KRC w/ z     </h5></figcaption><img src="videos/real_valve/observation/Success/Domain4/KRC_w_z_out_images_vis.gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KRC w/o z    </h5></figcaption><img src="videos/real_valve/observation/Success/Domain4/KRC_wo_z_out_images_vis.gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KR2 w/ z     </h5></figcaption><img src="videos/real_valve/observation/Success/Domain4/KR2_w_z_out_images_vis.gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KR2 w/o z    </h5></figcaption><img src="videos/real_valve/observation/Success/Domain4/KR2_wo_z_out_images_vis_success.gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KC2 w/ z     </h5></figcaption><img src="figure/No_Success.png" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>Random Policy</h5></figcaption><img src="figure/No_Success.png" alt="" style="vertical-align: middle;"></figure>
   </div>
 
   <h2>
     <a id="user-content-header-7" class="anchor" href="#header-7" aria-hidden="true"><span class="octicon octicon-link"></span></a>--Domain5--</h2>
   <div class="sim_yoko">
-    <figure><figcaption>KRC w/ z     </figcaption><img src="videos/real_valve/observation/Success/Domain5/KRC_w_z_Domain5_out_images_vis_Trial[0]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KRC w/o z    </figcaption><img src="videos/real_valve/observation/Success/Domain5/KRC_wo_z_Domain5_out_images_vis_Trial[1]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KR2 w/ z     </figcaption><img src="videos/real_valve/observation/Success/Domain5/KR2_w_z_Domain5_out_images_vis_Trial[0]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KR2 w/o z    </figcaption><img src="videos/real_valve/observation/Success/Domain5/KR2_wo_z_Domain5_out_images_vis_Trial[0]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KC2 w/ z     </figcaption><img src="figure/No_Success.png" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>Random Policy</figcaption><img src="figure/No_Success.png" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KRC w/ z     </h5></figcaption><img src="videos/real_valve/observation/Success/Domain5/KRC_w_z_Domain5_out_images_vis_Trial[0]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KRC w/o z    </h5></figcaption><img src="videos/real_valve/observation/Success/Domain5/KRC_wo_z_Domain5_out_images_vis_Trial[1]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KR2 w/ z     </h5></figcaption><img src="videos/real_valve/observation/Success/Domain5/KR2_w_z_Domain5_out_images_vis_Trial[0]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KR2 w/o z    </h5></figcaption><img src="videos/real_valve/observation/Success/Domain5/KR2_wo_z_Domain5_out_images_vis_Trial[0]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KC2 w/ z     </h5></figcaption><img src="figure/No_Success.png" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>Random Policy</h5></figcaption><img src="figure/No_Success.png" alt="" style="vertical-align: middle;"></figure>
   </div>
 
   <h2>
     <a id="user-content-header-7" class="anchor" href="#header-7" aria-hidden="true"><span class="octicon octicon-link"></span></a>--Domain6--</h2>
   <div class="sim_yoko">
-    <figure><figcaption>KRC w/ z     </figcaption><img src="videos/real_valve/observation/Success/Domain6/KRC_w_z_Domain6_out_images_vis_Trial[1]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KRC w/o z    </figcaption><img src="videos/real_valve/observation/Success/Domain6/KRC_wo_z_Domain6_out_images_vis_Trial[1]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KR2 w/ z     </figcaption><img src="videos/real_valve/observation/Success/Domain6/KR2_w_z_Domain6_out_images_vis_Trial[0]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KR2 w/o z    </figcaption><img src="videos/real_valve/observation/Success/Domain6/KR2_wo_z_Domain6_out_images_vis_Trial[1]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KC2 w/ z     </figcaption><img src="figure/No_Success.png" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>Random Policy</figcaption><img src="figure/No_Success.png" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KRC w/ z     </h5></figcaption><img src="videos/real_valve/observation/Success/Domain6/KRC_w_z_Domain6_out_images_vis_Trial[1]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KRC w/o z    </h5></figcaption><img src="videos/real_valve/observation/Success/Domain6/KRC_wo_z_Domain6_out_images_vis_Trial[1]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KR2 w/ z     </h5></figcaption><img src="videos/real_valve/observation/Success/Domain6/KR2_w_z_Domain6_out_images_vis_Trial[0]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KR2 w/o z    </h5></figcaption><img src="videos/real_valve/observation/Success/Domain6/KR2_wo_z_Domain6_out_images_vis_Trial[1]_Result[sucess].gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KC2 w/ z     </h5></figcaption><img src="figure/No_Success.png" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>Random Policy</h5></figcaption><img src="figure/No_Success.png" alt="" style="vertical-align: middle;"></figure>
   </div>
 
 
@@ -495,67 +495,67 @@
   <h2>
     <a id="user-content-header-7" class="anchor" href="#header-7" aria-hidden="true"><spanclass="octicon octicon-link"></span></a>--Domain1--</h2>
   <div class="sim_yoko">
-    <figure><figcaption>KRC w/ z     </figcaption><img src="figure/No_Failure.png" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KRC w/o z    </figcaption><img src="figure/No_Failure.png" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KR2 w/ z     </figcaption><img src="figure/No_Failure.png" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KR2 w/o z    </figcaption><img src="videos/real_valve/observation/Failure/Domain1/KR2_wo_z_Domain1_out_images_vis_Trial[0]_Result[fail].gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KC2 w/ z     </figcaption><img src="videos/real_valve/observation/Failure/Domain1/KC2_w_z_Domain1_out_images_vis_Trial[1]_Result[fail].gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>Random Policy</figcaption><img src="videos/real_valve/observation/Failure/Domain1/Random_Policy_Domain1_out_images_vis_Trial[0]_Result[fail].gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KRC w/ z     </h5></figcaption><img src="figure/No_Failure.png" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KRC w/o z    </h5></figcaption><img src="figure/No_Failure.png" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KR2 w/ z     </h5></figcaption><img src="figure/No_Failure.png" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KR2 w/o z    </h5></figcaption><img src="videos/real_valve/observation/Failure/Domain1/KR2_wo_z_Domain1_out_images_vis_Trial[0]_Result[fail].gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KC2 w/ z     </h5></figcaption><img src="videos/real_valve/observation/Failure/Domain1/KC2_w_z_Domain1_out_images_vis_Trial[1]_Result[fail].gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>Random Policy</h5></figcaption><img src="videos/real_valve/observation/Failure/Domain1/Random_Policy_Domain1_out_images_vis_Trial[0]_Result[fail].gif" alt="" style="vertical-align: middle;"></figure>
   </div>
 
   <h2>
     <a id="user-content-header-7" class="anchor" href="#header-7" aria-hidden="true"><span class="octicon octicon-link"></span></a>--Domain2--</h2>
   <div class="sim_yoko">
-    <figure><figcaption>KRC w/ z     </figcaption><img src="figure/No_Failure.png" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KRC w/o z    </figcaption><img src="figure/No_Failure.png" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KR2 w/ z     </figcaption><img src="videos/real_valve/observation/Failure/Domain2/KR2_w_z_Domain2_out_images_vis_Trial[0]_Result[fail].gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KR2 w/o z    </figcaption><img src="videos/real_valve/observation/Failure/Domain2/KR2_wo_z_Domain2_out_images_vis_Trial[0]_Result[fail].gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KC2 w/ z     </figcaption><img src="videos/real_valve/observation/Failure/Domain2/KC2_w_z_Domain2_out_images_vis_Trial[1]_Result[fail].gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>Random Policy</figcaption><img src="videos/real_valve/observation/Failure/Domain2/Random_Policy_Domain2_out_images_vis_Trial[1]_Result[fail].gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KRC w/ z     </h5></figcaption><img src="figure/No_Failure.png" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KRC w/o z    </h5></figcaption><img src="figure/No_Failure.png" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KR2 w/ z     </h5></figcaption><img src="videos/real_valve/observation/Failure/Domain2/KR2_w_z_Domain2_out_images_vis_Trial[0]_Result[fail].gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KR2 w/o z    </h5></figcaption><img src="videos/real_valve/observation/Failure/Domain2/KR2_wo_z_Domain2_out_images_vis_Trial[0]_Result[fail].gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KC2 w/ z     </h5></figcaption><img src="videos/real_valve/observation/Failure/Domain2/KC2_w_z_Domain2_out_images_vis_Trial[1]_Result[fail].gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>Random Policy</h5></figcaption><img src="videos/real_valve/observation/Failure/Domain2/Random_Policy_Domain2_out_images_vis_Trial[1]_Result[fail].gif" alt="" style="vertical-align: middle;"></figure>
   </div>
 
   <h2>
     <a id="user-content-header-7" class="anchor" href="#header-7" aria-hidden="true"><span class="octicon octicon-link"></span></a>--Domain3--</h2>
   <div class="sim_yoko">
-    <figure><figcaption>KRC w/ z     </figcaption><img src="videos/real_valve/observation/Failure/Domain3/KRC_w_z_Domain3_out_images_vis_fail.gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KRC w/o z    </figcaption><img src="videos/real_valve/observation/Failure/Domain3/KRC_wo_z_Domain3_out_images_vis_fail.gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KR2 w/ z     </figcaption><img src="videos/real_valve/observation/Failure/Domain3/KR2_w_z_Domain3_out_images_vis_Trial[1]_Result[fail].gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KR2 w/o z    </figcaption><img src="figure/No_Failure.png" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KC2 w/ z     </figcaption><img src="videos/real_valve/observation/Failure/Domain3/KC2_w_z_Domain3_out_images_vis_Trial[0]_Result[fail].gif"  alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>Random Policy</figcaption><img src="videos/real_valve/observation/Failure/Domain3/Random_Policy_Domain3_out_images_vis_Trial[0]_Result[fail].gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KRC w/ z     </h5></figcaption><img src="videos/real_valve/observation/Failure/Domain3/KRC_w_z_Domain3_out_images_vis_fail.gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KRC w/o z    </h5></figcaption><img src="videos/real_valve/observation/Failure/Domain3/KRC_wo_z_Domain3_out_images_vis_fail.gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KR2 w/ z     </h5></figcaption><img src="videos/real_valve/observation/Failure/Domain3/KR2_w_z_Domain3_out_images_vis_Trial[1]_Result[fail].gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KR2 w/o z    </h5></figcaption><img src="figure/No_Failure.png" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KC2 w/ z     </h5></figcaption><img src="videos/real_valve/observation/Failure/Domain3/KC2_w_z_Domain3_out_images_vis_Trial[0]_Result[fail].gif"  alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>Random Policy</h5></figcaption><img src="videos/real_valve/observation/Failure/Domain3/Random_Policy_Domain3_out_images_vis_Trial[0]_Result[fail].gif" alt="" style="vertical-align: middle;"></figure>
   </div>
 
   <h2>
     <a id="user-content-header-7" class="anchor" href="#header-7" aria-hidden="true"><span class="octicon octicon-link"></span></a>--Domain4--</h2>
   <div class="sim_yoko">
-    <figure><figcaption>KRC w/ z     </figcaption><img src="videos/real_valve/observation/Failure/Domain4/KRC_w_z_fail_out_images_vis.gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KRC w/o z    </figcaption><img src="figure/No_Failure.png" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KR2 w/ z     </figcaption><img src="videos/real_valve/observation/Failure/Domain4/KR2_w_z_out_images_vis.gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KR2 w/o z    </figcaption><img src="videos/real_valve/observation/Failure/Domain4/KR2_wo_z_fail_out_images_vis.gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KC2 w/ z     </figcaption><img src="videos/real_valve/observation/Failure/Domain4/KC2_w_z_out_images_vis_fail.gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>Random Policy</figcaption><img src="videos/real_valve/observation/Failure/Domain4/Random_policy_fail_out_images_vis.gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KRC w/ z     </h5></figcaption><img src="videos/real_valve/observation/Failure/Domain4/KRC_w_z_fail_out_images_vis.gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KRC w/o z    </h5></figcaption><img src="figure/No_Failure.png" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KR2 w/ z     </h5></figcaption><img src="videos/real_valve/observation/Failure/Domain4/KR2_w_z_out_images_vis.gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KR2 w/o z    </h5></figcaption><img src="videos/real_valve/observation/Failure/Domain4/KR2_wo_z_fail_out_images_vis.gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KC2 w/ z     </h5></figcaption><img src="videos/real_valve/observation/Failure/Domain4/KC2_w_z_out_images_vis_fail.gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>Random Policy</h5></figcaption><img src="videos/real_valve/observation/Failure/Domain4/Random_policy_fail_out_images_vis.gif" alt="" style="vertical-align: middle;"></figure>
   </div>
 
   <h2>
     <a id="user-content-header-7" class="anchor" href="#header-7" aria-hidden="true"><span class="octicon octicon-link"></span></a>--Domain5--</h2>
   <div class="sim_yoko">
-    <figure><figcaption>KRC w/ z     </figcaption><img src="figure/No_Failure.png" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KRC w/o z    </figcaption><img src="videos/real_valve/observation/Failure/Domain5/KRC_wo_out_images_vis.gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KR2 w/ z     </figcaption><img src="videos/real_valve/observation/Failure/Domain5/KR2_w_out_images_vis.gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KR2 w/o z    </figcaption><img src="videos/real_valve/observation/Failure/Domain5/KR2_wo_z_out_images_vis.gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KC2 w/ z     </figcaption><img src="videos/real_valve/observation/Failure/Domain5/KC2_w_z_Domain5_out_images_vis_Trial[0]_Result[fail].gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>Random Policy</figcaption><img src="videos/real_valve/observation/Failure/Domain5/Random Policy_Domain5_out_images_vis_Trial[0]_Result[fail].gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KRC w/ z     </h5></figcaption><img src="figure/No_Failure.png" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KRC w/o z    </h5></figcaption><img src="videos/real_valve/observation/Failure/Domain5/KRC_wo_out_images_vis.gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KR2 w/ z     </h5></figcaption><img src="videos/real_valve/observation/Failure/Domain5/KR2_w_out_images_vis.gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KR2 w/o z    </h5></figcaption><img src="videos/real_valve/observation/Failure/Domain5/KR2_wo_z_out_images_vis.gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KC2 w/ z     </h5></figcaption><img src="videos/real_valve/observation/Failure/Domain5/KC2_w_z_Domain5_out_images_vis_Trial[0]_Result[fail].gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>Random Policy</h5></figcaption><img src="videos/real_valve/observation/Failure/Domain5/Random Policy_Domain5_out_images_vis_Trial[0]_Result[fail].gif" alt="" style="vertical-align: middle;"></figure>
   </div>
 
   <h2>
     <a id="user-content-header-7" class="anchor" href="#header-7" aria-hidden="true"><span class="octicon octicon-link"></span></a>--Domain6--</h2>
   <div class="sim_yoko">
-    <figure><figcaption>KRC w/ z     </figcaption><img src="videos/real_valve/observation/Failure/Domain6/KRC_w_out_images_vis.gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KRC w/o z    </figcaption><img src="videos/real_valve/observation/Failure/Domain6/KRC_wo_out_images_vis.gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KR2 w/ z     </figcaption><img src="videos/real_valve/observation/Failure/Domain6/KR2_w_out_images_vis.gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KR2 w/o z    </figcaption><img src="videos/real_valve/observation/Failure/Domain6/KR2_wo_z_out_images_vis_fail.gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>KC2 w/ z     </figcaption><img src="videos/real_valve/observation/Failure/Domain6/KC2_w_Domain6_out_images_vis_Trial[1]_Result[fail].gif" alt="" style="vertical-align: middle;"></figure>
-    <figure><figcaption>Random Policy</figcaption><img src="videos/real_valve/observation/Failure/Domain6/Random_Policy_Domain6_out_images_vis_Trial[1]_Result[fail].gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KRC w/ z     </h5></figcaption><img src="videos/real_valve/observation/Failure/Domain6/KRC_w_out_images_vis.gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KRC w/o z    </h5></figcaption><img src="videos/real_valve/observation/Failure/Domain6/KRC_wo_out_images_vis.gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KR2 w/ z     </h5></figcaption><img src="videos/real_valve/observation/Failure/Domain6/KR2_w_out_images_vis.gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KR2 w/o z    </h5></figcaption><img src="videos/real_valve/observation/Failure/Domain6/KR2_wo_z_out_images_vis_fail.gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>KC2 w/ z     </h5></figcaption><img src="videos/real_valve/observation/Failure/Domain6/KC2_w_Domain6_out_images_vis_Trial[1]_Result[fail].gif" alt="" style="vertical-align: middle;"></figure>
+    <figure><figcaption><h5>Random Policy</h5></figcaption><img src="videos/real_valve/observation/Failure/Domain6/Random_Policy_Domain6_out_images_vis_Trial[1]_Result[fail].gif" alt="" style="vertical-align: middle;"></figure>
   </div>
 
 

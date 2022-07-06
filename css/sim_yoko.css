@@ -28,17 +28,16 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .sim_yoko figure {
     margin: 0 auto;
     width: 140px;
   }
 }
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   .sim_yoko figure {
     margin: 0 auto;
-    width: 30%;
+    width: 100%;
   }
 }
 
