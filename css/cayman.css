@@ -434,6 +434,29 @@ ul{
   flex-direction: column;
 }
 
+.btn{
+  width      : 170px;
+  height     : 80px;
+  text-align : center;
+  padding: 0;
+}
+
+.btn:before{
+	content       : "";
+	display       : inline-block;
+	height        : 80px;
+	vertical-align: middle;
+}
+
+
+.links{
+  padding-top: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+
+
 
 /*.for_iframe{*/
 /*  width: 75vw;*/
